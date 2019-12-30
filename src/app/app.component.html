@@ -1,20 +1,185 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="main">
+  <div class="header"></div>
+  <div class="body">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+          <div class="row">
+            <div class="col-sm-12 col-md-5 col-lg-5 col-xl-12">
+              <div class="card cardSett">
+                <div class="card-body">
+                  <img src="../assets/img.png" class="img" />
 
+                  <div class="nameOk">
+                    <div class="card-text cardText">{{ name }}</div>
+                    <img src="../assets/ok.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-7 col-lg-7 col-xl-12">
+              <div class="info">
+                <div class="recom">
+                  <img
+                    src="../assets/Vector.png"
+                    style="height: 16px;width: 16px; margin-right: 15px;"
+                  />
+                  <div class="textVec">{{ recUsers }}</div>
+                </div>
+                <div class="recom">
+                  <img
+                    src="../assets/mail.png"
+                    style="height: 7.04px; width: 16px; margin-right: 15px;"
+                  />
+                  <div class="textMail">
+                    Среднее время ответа —
+                  </div>
+                  <div class="minTime">{{ aver }}</div>
+                </div>
+                <div class="btnCls">
+                  <button class="btn">{{change}}</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
+          <div class="card">
+            <div class="card-body">
+              <div class="cardInfo">
+                <div class="nameInfo">
+                  <div class="nameImg">
+                    <div class="cardText">{{ name }}</div>
+                    <img src="../assets/ok.png" />
+                  </div>
+                  <div class="onlineText">
+                    {{ stat }}
+                  </div>
+                </div>
+                <div class="space"></div>
+                <div class="aboutInfo column">
+                  <div class="aboutMe">Обо мне</div>
+                  <div class="aboutText">{{ aboutText }}</div>
+                </div>
+                <div class="space"></div>
+                <div class="cityAndLangInfo">
+                  {{ city.opp }}
+                </div>
+                <div class="cityAndLangText">
+                  {{ city.city }}
+                </div>
+                <div class="space"></div>
+                <div class="cityAndLangInfo">
+                  {{ language.opp }}
+                </div>
+                <div class="cityAndLangText">
+                  {{ language.lang }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 30px;font-size: 18px; font-weight:bold">
+            Витрина объектов
+          </div>
+
+          <div class="row">
+            <div
+              *ngFor="let item of objectItem"
+              class="col-sm-12 col-md-6 col-lg-6 col-xl-6"
+            >
+              <div class="cardContainer">
+                <div class="card">
+                  <img src="./assets/image.png" alt="" class="imageOption" />
+                  <div class="wrapperInfo">
+                    <div class="textTitle">
+                      {{ item.textTitle }}
+                    </div>
+                    <div class="textInfo">
+                      <div class="textWithIcons">
+                        <img
+                          src="../assets/Door.png"
+                          alt=""
+                          style="widows: 10px; height: 16px;"
+                        />
+                        <div class="text">
+                          {{ item.textRoom }}
+                        </div>
+                      </div>
+                      <div class="textWithIcons">
+                        <img
+                          src="../assets/People.png"
+                          alt=""
+                          style="widows: 16px; height: 16px; "
+                        />
+                        <div class="text">
+                          {{ item.textGuest }}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="textAddress">
+                      {{ item.textAdress }}
+                    </div>
+                    <div class="rating">
+                      <div class="rating_item">
+                        <img src="../assets/star.png" alt="" />
+                        <img src="../assets/star.png" alt="" />
+                        <img src="../assets/star.png" alt="" />
+                        <img src="../assets/star.png" alt="" />
+                        <img src="../assets/star.png" alt="" />
+                        85
+                      </div>
+                      <div>
+                        {{ item.cancel }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="comments">
+              <div class="commText">Отзывы</div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="row textCom">
+                    <div class="recomText">Рекомендуют</div>
+                    <div class="usrev row">
+                      <div class="users">65% пользователей</div>
+                      <div class="reviews">(15 отзывов)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div *ngFor="let item of commentsItem">
+                <div class="reviewsItem">
+                  <div class="usersIcon">
+                    <img src="../assets/userIcon.png" />
+                  </div>
+                  <div class="usersComm">
+                    <div class="nameAndStatComm">
+                      <div class="leftSide">
+                        <div class="name">{{ item.name }}</div>
+                        <div class="dateComm">{{ item.date }}</div>
+                      </div>
+                      <div class="statusComm" [style.color]="item.color">
+                        {{ item.status }}
+                      </div>
+                    </div>
+                    <div class="textComm">{{ item.comments }}</div>
+                    <div class="privateComm">
+                      <img class="imgHome" src="../assets/home.png" />
+                      <div>Private Pool House with Amazing Views!</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

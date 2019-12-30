@@ -1,0 +1,418 @@
+:root {
+    --main-font-open    : 'Open Sans', sans-serif;
+    --main-font-rob     : 'Roboto', sans-serif;
+    --main-font-style   : normal;
+    --main-font-weight  : normal;
+    --main-font-weight-b: bold;
+    --main-font-size    : 16px;
+    --main-font-size-l  : 14px;
+    --main-font-size-b  : 18px;
+
+}
+
+.main {
+    height: 100%;
+    width : 100%;
+}
+
+.header {
+    position  : static;
+    width     : 100%;
+    height    : 40px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.16);
+    background: #FFFFFF;
+}
+
+.img {
+    max-width: 100%;
+    width    : 100%;
+}
+
+.cardSett {
+    margin-bottom: 15px;
+}
+
+.cardText {
+    font-family : var(--main-font-open);
+    font-style  : var(--main-font-style);
+    font-weight : bold;
+    font-size   : var(--main-font-size-b);
+    display     : flex;
+    align-items : center;
+    margin-right: 5px;
+    color       : #202020;
+
+}
+
+.aboutMe {
+    font-family: var(--main-font-open);
+    font-style : var(--main-font-style);
+    font-weight: bold;
+    font-size  : var(--main-font-size);
+    display    : flex;
+    align-items: center;
+    line-height: 31px;
+    margin     : 20px 0;
+    color      : #202020;
+}
+
+.aboutText {
+    font-family  : var(--main-font-open);
+    font-style   : var(--main-font-style);
+    font-weight  : var(--main-font-weight);
+    font-size    : var(--main-font-size);
+    margin-bottom: 20px;
+    color        : #202020;
+}
+
+.nameOk {
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: center;
+    margin-top     : 20px;
+}
+
+.imageOption {
+    max-width: 100%;
+    width    : 100%;
+}
+
+/*  */
+.cardContainer {
+    margin-top   : 30px;
+    width        : 100%;
+    border       : 1px solid #d5daeb;
+    box-sizing   : border-box;
+    border-radius: 6px;
+}
+
+.wrapperInfo {
+    margin: 16px;
+}
+
+.textTitle {
+    font-weight: 600;
+    font-size  : 16px;
+    line-height: 22px;
+    color      : #4a5ea8;
+}
+
+.textInfo {
+    display        : flex;
+    flex-direction : row;
+    margin-top     : 14px;
+    justify-content: space-between;
+}
+
+.text {
+    font-size: 14px;
+    margin   : 14px 0 14px 10px;
+}
+
+.textWithIcons {
+    display       : flex;
+    flex          : 1;
+    flex-direction: row;
+    align-items   : center;
+}
+
+.textAddress {
+    font-size     : 14px;
+    padding-bottom: 10px;
+    border-bottom : 1px solid #d5daeb;
+}
+
+.rating {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    margin-top     : 10px;
+}
+
+.rating_item {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+}
+
+
+.info {
+    margin: 15px 0 13px 0;
+}
+
+.textMail {
+    font-family: var(--main-font-open);
+    font-style : var(--main-font-style);
+    font-weight: var(--main-font-weight);
+    font-size  : var(--main-font-size-l);
+    line-height: 19px;
+    display    : flex;
+    align-items: center;
+    color      : #202020;
+}
+
+.minTime {
+    margin-left: 6px;
+    font-family: var(--main-font-open);
+    font-style : var(--main-font-style);
+    font-weight: var(--main-font-weight);
+    font-size  : var(--main-font-size-l);
+    line-height: 19px;
+    display    : flex;
+    align-items: center;
+    color      : #04AD5B;
+}
+
+.recom {
+    align-items   : center;
+    display       : flex;
+    flex-direction: row;
+    padding       : 13px 0;
+    border-top    : 1px solid #D5DAEB;
+}
+
+.recom:nth-child(2) {
+    border-bottom: 1px solid #D5DAEB;
+}
+
+.textVec {
+    font-family: var(--main-font-open);
+    font-style : var(--main-font-style);
+    font-weight: var(--main-font-weight);
+    font-size  : var(--main-font-size-l);
+    display    : flex;
+    align-items: center;
+    color      : #4A5EA8;
+}
+
+.btn {
+    color        : #FFFFFF;
+    width        : 100%;
+    height       : 50px;
+    background   : #4A5EA8;
+    border-radius: 25px;
+}
+
+.btnCls {
+    margin-top     : 13px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.body {
+    position  : static;
+    width     : 100%;
+    height    : 100%;
+    margin-top: 30px;
+}
+
+.nameInfo {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    margin-bottom  : 10px;
+}
+
+.space {
+    border-bottom: 1px solid #D5DAEB;
+
+}
+
+.cardInfo {
+    display       : flex;
+    flex-direction: column;
+    margin        : 0 10px;
+
+}
+
+.nameImg {
+    text-align : left;
+    display    : flex;
+    align-items: center;
+}
+
+.onlineText {
+    font-family: var(--main-font-open);
+    font-style : var(--main-font-style);
+    font-weight: var(--main-font-weight);
+    font-size  : var(--main-font-size-l);
+    line-height: 19px;
+    display    : flex;
+    align-items: center;
+    text-align : right;
+    color      : #A4AFD3;
+}
+
+.cityAndLangInfo {
+    font-family: var(--main-font-rob);
+    font-style : var(--main-font-style);
+    font-weight: bold;
+    font-size  : var(--main-font-size);
+    display    : flex;
+    align-items: center;
+    margin     : 20px 0;
+    color      : #202020;
+}
+
+.cityAndLangText {
+    font-family  : var(--main-font-rob);
+    font-style   : var(--main-font-style);
+    font-weight  : var(--main-font-weight);
+    font-size    : var(--main-font-size);
+    color        : #202020;
+    margin-bottom: 20px;
+}
+
+.comments {
+    display       : flex;
+    flex-direction: column;
+
+}
+
+.commText {
+    font-family: var(--main-font-rob);
+    font-style : var(--main-font-style);
+    font-weight: bold;
+    font-size  : var(--main-font-size-b);
+    display    : flex;
+    align-items: center;
+    margin     : 20px 0;
+    color      : #202020;
+}
+
+.recomText {
+    font-family: var(--main-font-open);
+    font-style : var(--main-font-style);
+    font-weight: var(--main-font-weight);
+    font-size  : var(--main-font-size);
+    display    : flex;
+    align-items: center;
+    color      : #202020;
+}
+
+.users {
+    font-family : var(--main-font-open);
+    font-style  : var(--main-font-style);
+    font-weight : bold;
+    font-size   : var(--main-font-size);
+    line-height : 22px;
+    display     : flex;
+    align-items : center;
+    text-align  : right;
+    margin-right: 5px;
+    color       : #4A5EA8;
+}
+
+.reviews {
+    font-family: var(--main-font-open);
+    font-style : var(--main-font-style);
+    font-weight: var(--main-font-weight);
+    font-size  : var(--main-font-size);
+    line-height: 22px;
+    display    : flex;
+    align-items: center;
+    text-align : right;
+    color      : #202020;
+}
+
+.reviewsItem {
+    display       : flex;
+    flex-direction: row;
+    border-bottom : 1px solid #D5DAEB;
+    padding       : 15px 0 15px 10px;
+}
+
+.textCom {
+    display        : flex;
+    justify-content: space-around;
+}
+
+.usersIcon {
+    display        : flex;
+    flex           : 1;
+    max-width      : 100%;
+    width          : 48px;
+    height         : 48px;
+    justify-content: center;
+}
+
+.leftSide {
+    display       : flex;
+    flex-direction: row;
+}
+
+.usersComm {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    flex           : 9;
+}
+
+.nameAndStatComm {
+    display        : flex;
+    flex-direction : row;
+    padding-bottom : 15px;
+    justify-content: space-between;
+}
+
+.name {
+    font-family : var(--main-font-open);
+    font-style  : var(--main-font-style);
+    font-weight : 600;
+    font-size   : 16px;
+    line-height : 22px;
+    display     : flex;
+    align-items : center;
+    margin-right: 10px;
+    color       : #4A5EA8;
+}
+
+.dateComm {
+    font-family: var(--main-font-open);
+    font-style : var(--main-font-style);
+    font-weight: normal;
+    font-size  : 13px;
+    display    : flex;
+    align-items: center;
+    color      : #505050;
+}
+
+.statusComm {
+    font-family: var(--main-font-open);
+    font-style : italic;
+    font-weight: 600;
+    font-size  : 16px;
+    display    : flex;
+    align-items: center;
+    text-align : right;
+}
+
+.textComm {
+    padding      : 10px 20px;
+    background   : #F6F7FB;
+    border       : 1px solid #D5DAEB;
+    box-sizing   : border-box;
+    border-radius: 0px 16px 16px 16px;
+}
+
+.privateComm {
+    font-family: var(--main-font-open);
+    font-style : normal;
+    font-weight: 600;
+    font-size  : 13px;
+    display    : flex;
+    align-items: flex-end;
+    text-align : right;
+    color      : #4F63AB;
+    padding-top: 15px;
+}
+
+.imgHome {
+    display     : flex;
+    width       : 14px;
+    height      : 12px;
+    margin-right: 10px;
+    align-items : center;
+}
